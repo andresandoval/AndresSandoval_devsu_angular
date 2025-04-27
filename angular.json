@@ -5,6 +5,18 @@
   "projects": {
     "AndresSandovalDevSu": {
       "projectType": "application",
+      "i18n": {
+        "sourceLocale": {
+          "code": "en-US",
+          "baseHref": ""
+        },
+        "locales": {
+          "es": {
+            "translation": "src/locale/messages.es.xlf",
+            "baseHref": ""
+          }
+        }
+      },
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
@@ -21,7 +33,8 @@
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
-              "zone.js"
+              "zone.js",
+              "@angular/localize/init"
             ],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
@@ -32,9 +45,12 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/flex-utils.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "i18nMissingTranslation": "warning",
+            "i18nDuplicateTranslation": "error"
           },
           "configurations": {
             "production": {
@@ -50,7 +66,8 @@
                   "maximumError": "8kB"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "localize": true
             },
             "development": {
               "optimization": false,
@@ -80,7 +97,8 @@
           "options": {
             "polyfills": [
               "zone.js",
-              "zone.js/testing"
+              "zone.js/testing",
+              "@angular/localize/init"
             ],
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
@@ -91,7 +109,8 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/flex-utils.scss"
             ],
             "scripts": []
           }

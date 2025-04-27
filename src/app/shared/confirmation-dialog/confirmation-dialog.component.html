@@ -1,0 +1,11 @@
+<div class="overlay">
+  <div class="modal">
+    <h3>{{ dialogData.title }}</h3>
+    <p>{{ dialogData.message }}</p>
+    <div class="flex flex-row justify-start gap-2">
+      <button class="material-btn" (click)="close(true)" i18n="@@accept">Accept</button>
+      <button class="material-btn" (click)="close(false)" i18n="@@cancel">Cancel</button>
+    </div>
+
+  </div>
+</div>

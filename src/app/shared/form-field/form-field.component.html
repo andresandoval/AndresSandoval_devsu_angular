@@ -1,0 +1,9 @@
+<div class="form-field flex flex-col gap-2" [ngClass]="{'error': showError}">
+  <label>{{ label }}</label>
+  <div class="input">
+    <ng-content></ng-content>
+  </div>
+  <div *ngIf="showError" class="flex flex-col">
+    <ng-content select="asm-form-field-error"></ng-content>
+  </div>
+</div>

@@ -1,0 +1,62 @@
+<div class="flex flex-col">
+  <div class="flex flex-row">
+    <input type="text" i18n-placeholder="@@search" placeholder="Search" (change)="onFilterChange($event)"
+           (blur)="onFilterChange($event)">
+    <div style="flex-grow: 1"></div>
+    <button class="material-btn" routerLink="new">
+      ➕ <span i18n="add">Add</span>
+    </button>
+  </div>
+  <br>
+  <div class="flex flex-col justify-center">
+    @if (financialProducts$ | async; as financialProducts) {
+      <table style="width: 100%;" class="simple-table">
+        <thead>
+        <tr>
+          <th i18n="logo">Logo</th>
+          <th i18n="product-name">Product name</th>
+          <th i18n="description">Description</th>
+          <th i18n="release-date">Release date</th>
+          <th i18n="restructuring-date">Restructuring date</th>
+          <th>&nbsp;</th>
+          <th>&nbsp;</th>
+        </tr>
+        </thead>
+        <tbody>
+          @for (p of financialProducts; track p.id) {
+            <tr>
+              <td [innerHTML]="highlightText(p.logo)"></td>
+              <td [innerHTML]="highlightText(p.name)"></td>
+              <td [innerHTML]="highlightText(p.description)"></td>
+              <td>{{ p.date_release | date }}</td>
+              <td>{{ p.date_revision | date }}</td>
+              <td>
+                <button class="material-btn" [routerLink]="p.id" i18n="@@edit">Edit</button>
+              </td>
+              <td>
+                <button class="material-btn" (click)="delete(p)" i18n="@@delete">Delete</button>
+              </td>
+            </tr>
+          } @empty {
+            <tr>
+              <td colspan="5" style="text-align: center" i18n="no-data">No data</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+      <div class="flex flex-row">
+        <div>{{ financialProducts.length }}
+          <ng-container i18n="products">products</ng-container>
+        </div>
+        <div style="flex-grow: 1"></div>
+        <select>
+          <option>5</option>
+          <option>10</option>
+          <option>20</option>
+        </select>
+      </div>
+    } @else {
+      <asm-skeleton></asm-skeleton>
+    }
+  </div>
+</div>

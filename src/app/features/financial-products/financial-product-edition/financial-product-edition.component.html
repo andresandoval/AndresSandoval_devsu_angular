@@ -1,0 +1,82 @@
+<div class="flex flex-col justify-center items-center" style="background: #fff">
+  <h2>Registration form</h2>
+  <hr class="w-100">
+  <form [formGroup]="formGroup" (ngSubmit)="submit()" class="flex flex-col gap-2">
+    <div class="flex flex-row gap-2">
+      <asm-form-field label="ID" i18n-label="id">
+        <input formControlName="id" type="text"/>
+        <asm-form-field-error *ngIf="idFormCtrl.errors?.['required']">
+          <ng-container i18n="@@id-is-required">ID is required</ng-container>
+        </asm-form-field-error>
+        <asm-form-field-error *ngIf="idFormCtrl.errors?.['minlength']">
+          <ng-container i18n="@@id-too-small">ID is too small</ng-container>
+        </asm-form-field-error>
+        <asm-form-field-error *ngIf="idFormCtrl.errors?.['maxlength']">
+          <ng-container i18n="@@id-too-big">ID is too big</ng-container>
+        </asm-form-field-error>
+      </asm-form-field>
+
+      <asm-form-field label="Name" i18n-label="name">
+        <input formControlName="name" type="text"/>
+        <asm-form-field-error *ngIf="nameFormCtrl.errors?.['required']">
+          <ng-container i18n="@@name-required">Name is required</ng-container>
+        </asm-form-field-error>
+        <asm-form-field-error *ngIf="nameFormCtrl.errors?.['minlength']">
+          <ng-container i18n="@@name-too-short">Name is too short</ng-container>
+        </asm-form-field-error>
+        <asm-form-field-error *ngIf="nameFormCtrl.errors?.['maxlength']">
+          <ng-container i18n="@@name-too-long">Name is too long</ng-container>
+        </asm-form-field-error>
+      </asm-form-field>
+    </div>
+
+    <div class="flex flex-row gap-2">
+      <asm-form-field label="Description" i18n-label="description">
+        <input formControlName="description" type="text"/>
+        <asm-form-field-error *ngIf="descriptionFormCtrl.errors?.['required']">
+          <ng-container i18n="@@description-required">Description is required</ng-container>
+        </asm-form-field-error>
+        <asm-form-field-error *ngIf="descriptionFormCtrl.errors?.['minlength']">
+          <ng-container i18n="@@description-too-short">Description is too short</ng-container>
+        </asm-form-field-error>
+        <asm-form-field-error *ngIf="descriptionFormCtrl.errors?.['maxlength']">
+          <ng-container i18n="@@description-too-long">Description is too long</ng-container>
+        </asm-form-field-error>
+      </asm-form-field>
+
+      <asm-form-field label="Logo" i18n-label="logo">
+        <input formControlName="logo" type="text"/>
+        <asm-form-field-error *ngIf="logoFormCtrl.errors?.['required']">
+          <ng-container i18n="@@logo-required">Logo is required</ng-container>
+        </asm-form-field-error>
+      </asm-form-field>
+    </div>
+
+    <div class="flex flex-row gap-2">
+      <asm-form-field label="Release date" i18n-label="release-date" class="w-100">
+        <input formControlName="date_release" type="date" class="w-100" [min]="today"/>
+        <asm-form-field-error *ngIf="dateReleaseFormCtrl.errors?.['required']">
+          <ng-container i18n="@@release-date-required">Release date is required</ng-container>
+        </asm-form-field-error>
+      </asm-form-field>
+
+      <asm-form-field label="Revision date" i18n-label="revision-date" class="w-100">
+        <input formControlName="date_revision" type="date"/>
+        <asm-form-field-error *ngIf="dateRevisionFormCtrl.errors?.['required']">
+          <ng-container i18n="@@revision-date-required">Revision date is required</ng-container>
+        </asm-form-field-error>
+      </asm-form-field>
+    </div>
+
+    <br>
+    <div class="flex flex-row justify-center gap-2">
+      <button class="material-btn"  type="reset" routerLink="../">
+        ⬅️ <span i18n="@@cancel">Cancel</span>
+      </button>
+      <button class="material-btn" type="submit">
+        ✅ <span i18n="@@accept">Accept</span>
+      </button>
+    </div>
+  </form>
+  <br>
+</div>

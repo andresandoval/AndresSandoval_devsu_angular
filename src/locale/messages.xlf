@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="8040881171107393560" datatype="html">
+        <source>ID</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-product-edition/financial-product-edition.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">id</note>
+      </trans-unit>
+      <trans-unit id="id-is-required" datatype="html">
+        <source>ID is required</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-product-edition/financial-product-edition.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="id-too-small" datatype="html">
+        <source>ID is too small</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-product-edition/financial-product-edition.component.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="id-too-big" datatype="html">
+        <source>ID is too big</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-product-edition/financial-product-edition.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8953033926734869941" datatype="html">
+        <source>Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-product-edition/financial-product-edition.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">name</note>
+      </trans-unit>
+      <trans-unit id="name-required" datatype="html">
+        <source>Name is required</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-product-edition/financial-product-edition.component.html</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="name-too-short" datatype="html">
+        <source>Name is too short</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-product-edition/financial-product-edition.component.html</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="name-too-long" datatype="html">
+        <source>Name is too long</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-product-edition/financial-product-edition.component.html</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4902817035128594900" datatype="html">
+        <source>Description</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-product-edition/financial-product-edition.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-products-list/financial-products-list.component.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+        <note priority="1" from="description">description</note>
+      </trans-unit>
+      <trans-unit id="description-required" datatype="html">
+        <source>Description is required</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-product-edition/financial-product-edition.component.html</context>
+          <context context-type="linenumber">37,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="description-too-short" datatype="html">
+        <source>Description is too short</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-product-edition/financial-product-edition.component.html</context>
+          <context context-type="linenumber">40,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="description-too-long" datatype="html">
+        <source>Description is too long</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-product-edition/financial-product-edition.component.html</context>
+          <context context-type="linenumber">43,44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4550958265168690830" datatype="html">
+        <source>Logo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-product-edition/financial-product-edition.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-products-list/financial-products-list.component.html</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+        <note priority="1" from="description">logo</note>
+      </trans-unit>
+      <trans-unit id="logo-required" datatype="html">
+        <source>Logo is required</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-product-edition/financial-product-edition.component.html</context>
+          <context context-type="linenumber">50,51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2437533037087698487" datatype="html">
+        <source>Release date</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-product-edition/financial-product-edition.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-products-list/financial-products-list.component.html</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+        <note priority="1" from="description">release-date</note>
+      </trans-unit>
+      <trans-unit id="release-date-required" datatype="html">
+        <source>Release date is required</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-product-edition/financial-product-edition.component.html</context>
+          <context context-type="linenumber">59,60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1585683163316586513" datatype="html">
+        <source>Revision date</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-product-edition/financial-product-edition.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+        <note priority="1" from="description">revision-date</note>
+      </trans-unit>
+      <trans-unit id="revision-date-required" datatype="html">
+        <source>Revision date is required</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-product-edition/financial-product-edition.component.html</context>
+          <context context-type="linenumber">66,67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cancel" datatype="html">
+        <source>Cancel</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-product-edition/financial-product-edition.component.html</context>
+          <context context-type="linenumber">74,75</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/confirmation-dialog/confirmation-dialog.component.html</context>
+          <context context-type="linenumber">7,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="accept" datatype="html">
+        <source>Accept</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-product-edition/financial-product-edition.component.html</context>
+          <context context-type="linenumber">77,78</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/confirmation-dialog/confirmation-dialog.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="confirm" datatype="html">
+        <source>Confirm</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-product-edition/financial-product-edition.component.ts</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-products-list/financial-products-list.component.ts</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="save-product" datatype="html">
+        <source>Save product</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-product-edition/financial-product-edition.component.ts</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="search" datatype="html">
+        <source>Search</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-products-list/financial-products-list.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3249513483374643425" datatype="html">
+        <source>Add</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-products-list/financial-products-list.component.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+        <note priority="1" from="description">add</note>
+      </trans-unit>
+      <trans-unit id="588284100849805066" datatype="html">
+        <source>Product name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-products-list/financial-products-list.component.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+        <note priority="1" from="description">product-name</note>
+      </trans-unit>
+      <trans-unit id="1234957103839620789" datatype="html">
+        <source>Restructuring date</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-products-list/financial-products-list.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+        <note priority="1" from="description">restructuring-date</note>
+      </trans-unit>
+      <trans-unit id="edit" datatype="html">
+        <source>Edit</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-products-list/financial-products-list.component.html</context>
+          <context context-type="linenumber">34,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="delete" datatype="html">
+        <source>Delete</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-products-list/financial-products-list.component.html</context>
+          <context context-type="linenumber">37,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8470311110519302542" datatype="html">
+        <source>No data</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-products-list/financial-products-list.component.html</context>
+          <context context-type="linenumber">42,43</context>
+        </context-group>
+        <note priority="1" from="description">no-data</note>
+      </trans-unit>
+      <trans-unit id="442085080206895883" datatype="html">
+        <source>products</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-products-list/financial-products-list.component.html</context>
+          <context context-type="linenumber">49,50</context>
+        </context-group>
+        <note priority="1" from="description">products</note>
+      </trans-unit>
+      <trans-unit id="delete-product" datatype="html">
+        <source>Delete product</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-products-list/financial-products-list.component.ts</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="financial-products" datatype="html">
+        <source>Financial products</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-products.routes.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="new-financial-product" datatype="html">
+        <source>New financial product</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-products.routes.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="financial-product-edition" datatype="html">
+        <source>Financial product edition</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/financial-products/financial-products.routes.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bank" datatype="html">
+        <source>Bank</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/main/main.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="success" datatype="html">
+        <source>Success</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/providers/alert.service.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="error" datatype="html">
+        <source>Error</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/providers/alert.service.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="warning" datatype="html">
+        <source>Warning</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/providers/alert.service.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8720977247725652816" datatype="html">
+        <source>Ok</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/alert-dialog/alert-dialog.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+        <note priority="1" from="description">ok</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

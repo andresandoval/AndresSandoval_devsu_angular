@@ -1,0 +1,47 @@
+/* Display */
+.flex        { display: flex; }
+.inline-flex { display: inline-flex; }
+.flex-grow {flex-grow: 1}
+
+/* Flex Direction */
+.flex-row       { flex-direction: row; }
+.flex-row-rev   { flex-direction: row-reverse; }
+.flex-col       { flex-direction: column; }
+.flex-col-rev   { flex-direction: column-reverse; }
+
+/* Justify Content */
+.justify-start   { justify-content: flex-start; }
+.justify-end     { justify-content: flex-end; }
+.justify-center  { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.justify-around  { justify-content: space-around; }
+.justify-evenly  { justify-content: space-evenly; }
+
+/* Align Items */
+.items-start    { align-items: flex-start; }
+.items-end      { align-items: flex-end; }
+.items-center   { align-items: center; }
+.items-baseline { align-items: baseline; }
+.items-stretch  { align-items: stretch; }
+
+/* Align Self (individual items) */
+.self-auto     { align-self: auto; }
+.self-start    { align-self: flex-start; }
+.self-end      { align-self: flex-end; }
+.self-center   { align-self: center; }
+.self-stretch  { align-self: stretch; }
+
+/* Flex Wrap */
+.flex-wrap       { flex-wrap: wrap; }
+.flex-nowrap     { flex-wrap: nowrap; }
+.flex-wrap-rev   { flex-wrap: wrap-reverse; }
+
+/* Gap Utilities */
+.gap-1 { gap: 0.25rem; }  /* 4px */
+.gap-2 { gap: 0.5rem;  }  /* 8px */
+.gap-4 { gap: 1rem;    }  /* 16px */
+.gap-8 { gap: 2rem;    }  /* 32px */
+
+
+.text-center {  text-align: center;}
+.w-100 {width: 100%}
