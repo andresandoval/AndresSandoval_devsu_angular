@@ -1,59 +1,103 @@
-# AndresSandovalDevSu
+AndresSandoval_devsu_angular Setup
+==================================
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.8.
+This guide will help you set up the **AndresSandoval_devsu_angular** Angular project, build it, install a lightweight server, and open the English or Spanish version of the site from the appropriate directory.
 
-## Development server
+Prerequisites
+-------------
 
-To start a local development server, run:
+Before you begin, make sure you have the following installed on your system:
 
-```bash
-ng serve
-```
+-   **Node.js**: You can download and install the latest LTS version from [Node.js official site](https://nodejs.org/).
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+-   **Angular CLI**: If you don't have Angular CLI installed globally, you can do so by running:
 
-## Code scaffolding
+    
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+    `npm install -g @angular/cli`
 
-```bash
-ng generate component component-name
-```
+1\. Clone the Repository
+------------------------
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Clone the repository to your local machine using Git:
 
-```bash
-ng generate --help
-```
 
-## Building
+`git clone https://github.com/andresandoval/AndresSandoval_devsu_angular.git
+cd AndresSandoval_devsu_angular`
 
-To build the project run:
+Alternatively, you can fork the repository and clone your fork.
 
-```bash
-ng build
-```
+2\. Install Project Dependencies
+--------------------------------
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Navigate to the project directory and install all the dependencies:
 
-## Running unit tests
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
 
-```bash
-ng test
-```
+`npm install`
 
-## Running end-to-end tests
+This will install all the necessary dependencies defined in `package.json`, including Angular and other packages.
 
-For end-to-end (e2e) testing, run:
+3\. Build the Project
+---------------------
 
-```bash
-ng e2e
-```
+To build the project for production, run the following command:
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
-## Additional Resources
+`ng build --prod`
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This will create the production build in the `dist/browser/` directory. By default, the build will be generated for the `en-US` locale. If you have configured i18n for other languages, you can build for those as well.
+
+### Build for Spanish Locale (es)
+
+If you want to build the project for Spanish (or another language configured in `angular.json`), use the following command:
+
+
+`ng build --prod --configuration=es`
+
+This will create the build for the `es` (Spanish) locale in the `dist/browser/es/` directory.
+
+4\. Install Lite Server
+-----------------------
+
+To serve the application locally with a lightweight server, you'll need to install `lite-server`:
+
+
+`npm install lite-server --save-dev`
+
+5\. Run Lite Server
+-------------------
+
+Once you have installed `lite-server`, you can run it and specify which directory to serve. Depending on the language version, use the following commands:
+
+### Serve the English Version (from `dist/browser/en-US`)
+
+`npx lite-server --baseDir=dist/browser/en-US`
+
+### Serve the Spanish Version (from `dist/browser/es`)
+
+
+`npx lite-server --baseDir=dist/browser/es`
+
+This will launch the server and open the correct version of the site in your default browser.
+
+6\. Open the Application in Your Browser
+----------------------------------------
+
+Once the server is running, it should automatically open the application in your default web browser. If not, you can manually visit the following URLs:
+
+-   **English version**: `http://localhost:3000/`
+
+-   **Spanish version**: `http://localhost:3000/` (served from `dist/browser/es`)
+
+7\. Additional Commands
+-----------------------
+
+To run the project in development mode, use the Angular CLI development server:
+
+
+`ng serve`
+
+This will start a local development server at `http://localhost:4200`, where you can view the application during development.
+
+* * * * *
